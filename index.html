@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquerises.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dennis norland</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#projets">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Dennis norland</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icons" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#About" onclick="togglemenu()">About</a></li>
+          <li><a href="#Experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="#projets" onclick="togglemenu()">projects</a></li>
+          <li><a href="#contact" onclick="togglemenu()">contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section-pic-container">
+        <img src="./img/dennis.png.jpg"  alt="">
+
+        </div>
+
+        <div class="section-text">
+        <p class="section-text-p1">hello, i'm</p>
+        <h1 class="title">Dennis norland</h1>
+        <p class="section-text-p2">frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"
+          onclick="window.open()">
+            Download cv
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img
+             src="./img/IMG_0478.JPG" 
+             alt=" my linkedin profile"
+            class="icon"
+             onclick="location.href='https://linkedin.com/'"
+            />
+
+            <img
+             src="./img/IMG_0489.JPG" 
+             alt=" my github profile"
+            class="icon"
+             onclick="location.href='https://github.com/DennisNorland'"
+            />
+        </div>
+        </div>
+    </section>
+
+    <section id="About">
+      <p class="section-text-p1">Get to know more</p>
+      <h1 class="title ">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img 
+          src="./img/norland.png.jpeg" 
+          alt="profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img 
+              src="./img/IMG_0561.JPG"
+               alt="Experience-icon" class="icon">
+               <h1>Experience</h1>
+               <p>2+ your <br>frontend developer</p>
+            </div>
+            <div class="details-container">
+              <img 
+              src="./img/IMG_0561.JPG"
+               alt="Education-icon" class="icon">
+               <h1>Education</h1>
+               <p>Magnificent <br>master degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+               elit. Facilis, ratione expedita laboriosam suscipit 
+               a inventore eum obcaecati hic, quidem error consectetur
+               recusandae iste odit repellendus accusamus beatae eos?
+              </p>
+          </div>
+        </div>
+      </div>
+      <img src="./img/Screenshot_20230915-064014.png"
+       alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+    </section>
+    <script>
+      src = "script.js";
+    </script>
+  </body>
+</html>
